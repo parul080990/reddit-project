@@ -1,0 +1,12 @@
+<div
+  #list
+  style="overflow: hidden; overflow-y: scroll; height: 400px"
+  (scroll)="onscroll(list)"
+>
+  <ul>
+    <li *ngFor="let result of results">
+      <a href="{{ result.url }}"> {{ result.url }} </a>
+      <span style="padding-left: 60px"> {{ result.title }}</span>
+    </li>
+  </ul>
+</div>

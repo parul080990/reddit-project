@@ -1,0 +1,6 @@
+<h3>Call {{ subreddit }}</h3>
+
+<app-reddit-list
+  (loadNextItems)="onloadNextItems($event)"
+  [results]="results"
+></app-reddit-list>
